@@ -1,8 +1,6 @@
-package com.zkswuzy;
+package com.winkle;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
-import java.awt.image.BufferedImage;
 import java.io.*;
 import java.awt.*;
 import java.awt.event.*;
