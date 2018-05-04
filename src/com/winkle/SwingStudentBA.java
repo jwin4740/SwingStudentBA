@@ -5,6 +5,7 @@ import java.io.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.SwingUtilities;
+import javax.swing.border.Border;
 
 /*
  * SwingStudentBA.java uses these files:
@@ -19,15 +20,13 @@ public class SwingStudentBA extends JPanel
     JFileChooser fc;
 
 
-
-
     public SwingStudentBA() {
         super(new BorderLayout());
 
         //Create the log first, because the action listeners
         //need to refer to it.
         log = new JTextArea(5, 20);
-        log.setMargin(new Insets(10, 5, 5, 5));
+        log.setMargin(new Insets(5, 5, 5, 5));
         log.setEditable(false);
         JScrollPane logScrollPane = new JScrollPane(log);
 
@@ -45,7 +44,7 @@ public class SwingStudentBA extends JPanel
 
         //Create the open button.  We use the image from the JLF
         //Graphics Repository (but we extracted it from the jar).
-        openButton = new JButton("Open a File...",
+        openButton = new JButton("Browse...",
                 createImageIcon("images/Open16.gif"));
         openButton.addActionListener(this);
 
@@ -56,22 +55,28 @@ public class SwingStudentBA extends JPanel
         saveButton.addActionListener(this);
 
 
-
         //For layout purposes, put the buttons in a separate panel
         JPanel imgPanel = new JPanel();
-        ImageIcon mine = createImageIcon("images/BAImage.png");
-
+        imgPanel.setLayout(new FlowLayout(FlowLayout.RIGHT));
+        ImageIcon mine = createImageIcon("images/BA4.png");
+        Border paddingBorder = BorderFactory.createEmptyBorder(5, 15, 10, 10);
+        Border buttonBorder = BorderFactory.createEmptyBorder(5, 10, 5, 10);
 
         JLabel label2 = new JLabel(mine);
+        label2.setBorder(paddingBorder);
         imgPanel.add(label2);
+
         JPanel buttonPanel = new JPanel(); //use FlowLayout
+        buttonPanel.setBorder(BorderFactory.createEmptyBorder(200,0,0,0));
+//        openButton.setBorder(buttonBorder);
+//        saveButton.setBorder(buttonBorder);
         buttonPanel.add(openButton);
         buttonPanel.add(saveButton);
 
 
         //Add the buttons and the log to this panel.
-        add(imgPanel, BorderLayout.PAGE_START);
-        add(logScrollPane, BorderLayout.LINE_START);
+        add(imgPanel, BorderLayout.SOUTH);
+//        add(logScrollPane, BorderLayout.LINE_START);
         add(buttonPanel, BorderLayout.CENTER);
 
     }
@@ -124,16 +129,20 @@ public class SwingStudentBA extends JPanel
      * event dispatch thread.
      */
     private static void createAndShowGUI() {
-
-        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        int screenHeight = screenSize.height;
-        int screenWidth = screenSize.width;
-        //Create and set up the window.
         JFrame frame = new JFrame("SwingStudentBA");
-        frame.pack();
+        Toolkit tk = Toolkit.getDefaultToolkit();
+        Dimension dim = tk.getScreenSize();
+        int screenHeight = dim.height;
+        int screenWidth = dim.width;
+        int xPos = (screenWidth / 2) - (frame.getWidth() / 2);
+        int yPos = (screenHeight / 2) - (frame.getHeight() / 2);
+        frame.setLocation(xPos, yPos);
+        //Create and set up the window.
 
+        frame.pack();
+        frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(screenWidth / 4, screenHeight / 3);
+        frame.setSize(650, 500);
 
 
         // center the jframe on screen
