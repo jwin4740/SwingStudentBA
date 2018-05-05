@@ -12,13 +12,13 @@ import javax.swing.border.Border;
  *   images/Open16.gif
  *   images/Save16.gif
  */
-public class SwingStudentBA extends JPanel
+public class SwingStudentBA extends JFrame
         implements ActionListener {
     static private final String newline = "\n";
     JButton openButton, saveButton;
     JTextArea log;
     JFileChooser fc;
-    Border paddingBorder = BorderFactory.createEmptyBorder(50, 15, 50, 15);
+    private Border paddingBorder = BorderFactory.createEmptyBorder(50, 15, 50, 15);
 
     public SwingStudentBA() {
 
@@ -63,31 +63,32 @@ public class SwingStudentBA extends JPanel
 //        saveButton.setBorder(buttonBorder);
 //        buttonPanel.add(openButton);
 //        buttonPanel.add(saveButton);
-        TextField a = new TextField();
-        openButton = new JButton("Browse...",
-                createImageIcon("images/Open16.gif"));
-        openButton.addActionListener(this);
-        JPanel inputPanel = MakeTitledBorderPanel("Input File");
-        inputPanel.add(a);
-        inputPanel.add(openButton);
-
         TextField b = new TextField();
+
+        TextField a = new TextField();
         openButton = new JButton("Browse...",
                 createImageIcon("images/Open16.gif"));
         openButton.addActionListener(this);
         JPanel outputPanel = MakeTitledBorderPanel("Output");
         outputPanel.add(b);
         outputPanel.add(openButton);
+        JPanel inputPanel = MakeTitledBorderPanel("Input File");
+        inputPanel.add(a);
+        JPanel nestedBorderLayout = new JPanel();
+        nestedBorderLayout.setLayout(new BorderLayout());
+        nestedBorderLayout.add(inputPanel, BorderLayout.NORTH);
+        nestedBorderLayout.add(outputPanel, BorderLayout.CENTER);
+
+
+
+
 
 
         //Add the buttons and the log to this panel.
         m.setLayout(new BorderLayout());
         m.add(imgPanel, BorderLayout.SOUTH);
 //        add(logScrollPane, BorderLayout.LINE_START);
-        m.add(inputPanel, BorderLayout.CENTER);
-        m.add(outputPanel, BorderLayout.CENTER);
-
-
+        m.add(nestedBorderLayout, BorderLayout.CENTER);
         MakeFrame().add(m);
 
 
