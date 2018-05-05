@@ -19,6 +19,7 @@ public class SwingStudentBA extends JFrame
     JTextArea log;
     JFileChooser fc;
     private Border paddingBorder = BorderFactory.createEmptyBorder(50, 15, 50, 15);
+    private Border rightPadding = BorderFactory.createEmptyBorder(0, 0, 0, 25);
 
     public SwingStudentBA() {
 
@@ -63,20 +64,36 @@ public class SwingStudentBA extends JFrame
 //        saveButton.setBorder(buttonBorder);
 //        buttonPanel.add(openButton);
 //        buttonPanel.add(saveButton);
-        Font font1 = new Font("SansSerif", Font.BOLD, 18);
-        JTextField b = new JTextField(5);
+        Font font1 = new Font("SansSerif", Font.BOLD, 16);
+        Font font2 = new Font("SansSerif", Font.BOLD, 16);
+        JTextField b = new JTextField(20);
+        b.setFont(font2);
 
 
         JTextField a = new JTextField(20);
         a.setFont(font1);
         openButton = new JButton("Browse...",
                 createImageIcon("images/Open16.gif"));
+
+        JButton dotButton = new JButton("...");
         openButton.addActionListener(this);
         JPanel outputPanel = MakeTitledBorderPanel("Output");
-        outputPanel.add(b);
+        outputPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
+
         JPanel inputPanel = MakeTitledBorderPanel("Input File");
         inputPanel.add(a);
         inputPanel.add(openButton);
+        JLabel formatLabel = new JLabel("Format");
+        String[] formatOptions = {"XLS", "PDF", "JSON"};
+        JComboBox formatCombo = new JComboBox(formatOptions);
+//        formatCombo.setLayout(new FlowLayout());
+        formatCombo.setSelectedIndex(0);
+        formatCombo.setBorder(rightPadding);
+
+        outputPanel.add(formatLabel);
+        outputPanel.add(formatCombo);
+        outputPanel.add(b);
+        outputPanel.add(dotButton);
         JPanel nestedBorderLayout = new JPanel();
         nestedBorderLayout.setLayout(new BorderLayout());
         nestedBorderLayout.add(inputPanel, BorderLayout.NORTH);
