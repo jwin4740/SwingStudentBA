@@ -63,25 +63,24 @@ public class SwingStudentBA extends JFrame
 //        saveButton.setBorder(buttonBorder);
 //        buttonPanel.add(openButton);
 //        buttonPanel.add(saveButton);
-        TextField b = new TextField();
+        Font font1 = new Font("SansSerif", Font.BOLD, 18);
+        JTextField b = new JTextField(5);
 
-        TextField a = new TextField();
+
+        JTextField a = new JTextField(20);
+        a.setFont(font1);
         openButton = new JButton("Browse...",
                 createImageIcon("images/Open16.gif"));
         openButton.addActionListener(this);
         JPanel outputPanel = MakeTitledBorderPanel("Output");
         outputPanel.add(b);
-        outputPanel.add(openButton);
         JPanel inputPanel = MakeTitledBorderPanel("Input File");
         inputPanel.add(a);
+        inputPanel.add(openButton);
         JPanel nestedBorderLayout = new JPanel();
         nestedBorderLayout.setLayout(new BorderLayout());
         nestedBorderLayout.add(inputPanel, BorderLayout.NORTH);
         nestedBorderLayout.add(outputPanel, BorderLayout.CENTER);
-
-
-
-
 
 
         //Add the buttons and the log to this panel.
@@ -92,6 +91,10 @@ public class SwingStudentBA extends JFrame
         MakeFrame().add(m);
 
 
+    }
+
+    private JTextField makeInput() {
+        return new JTextField();
     }
 
     private JFrame MakeFrame() {
