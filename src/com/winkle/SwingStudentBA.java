@@ -77,7 +77,7 @@ public class SwingStudentBA extends JFrame
 
         JButton dotButton = new JButton("...");
         openButton.addActionListener(this);
-        JPanel outputPanel = MakeTitledBorderPanel("Output");
+        JPanel outputPanel = MakeTitledBorderPanel("Output Location");
         outputPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
 
         JPanel inputPanel = MakeTitledBorderPanel("Input File");
