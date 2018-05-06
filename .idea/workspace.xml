@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09977110-2da5-4b4d-96b5-aaf0996fe471" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/winkle2/SwingStudentBABox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/winkle2/images/BA2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/winkle2/images/BA2.png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/winkle2/images/BA3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/winkle2/images/BA4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/winkle2/images/BAImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/winkle2/images/JavaIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/winkle2/images/Open16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/winkle2/images/Save16.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/winkle/SwingStudentBA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/winkle/SwingStudentBA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/winkle/images/BA2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/images/BA2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/winkle/images/BA2.png.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/images/BA2.png.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/winkle/images/BA3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/images/BA3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/winkle/images/BA4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/images/BA4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/winkle/images/BAImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/images/BAImage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/winkle/images/JavaIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/images/JavaIcon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/winkle/images/Open16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/images/Open16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/winkle/images/Save16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/images/Save16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/winkle2/SwingStudentBABox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/winkle2/SwingStudentBABox.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +37,8 @@
       <file leaf-file-name="SwingStudentBA.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/winkle/SwingStudentBA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="15" column="31" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="286">
+              <caret line="51" column="19" selection-start-line="50" selection-end-line="58" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,13 +49,18 @@
       <file leaf-file-name="SwingStudentBABox.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/winkle2/SwingStudentBABox.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+            <state relative-caret-position="199">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BA4.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/images/BA4.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
@@ -107,10 +127,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1783" />
+    <option name="x" value="1985" />
     <option name="y" value="-4" />
-    <option name="width" value="1754" />
-    <option name="height" value="888" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -118,7 +138,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -143,13 +163,20 @@
               <item name="SwingStudentBA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SwingStudentBA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SwingStudentBA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="winkle2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,13 +191,14 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/winkle2" />
+      <recent name="$PROJECT_DIR$/src/com/zkswuzy/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/zkswuzy/images" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/com/zkswuzy" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/com/zkswuzy/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -286,12 +314,13 @@
       <workItem from="1525467136066" duration="1935000" />
       <workItem from="1525476977586" duration="8058000" />
       <workItem from="1525485102537" duration="107000" />
-      <workItem from="1525559516164" duration="9626000" />
+      <workItem from="1525559516164" duration="10282000" />
+      <workItem from="1525649115332" duration="2036000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48073000" />
+    <option name="totallyTimeSpent" value="50765000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -316,11 +345,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2528856" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.26652676" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2518363" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2659686" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13653952" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1381979" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -348,13 +377,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/Desktop/jdk-10.0.1/lib/src.zip!/java.desktop/javax/swing/JFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/winkle/SwingStudentBA.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3564">
@@ -738,18 +760,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/winkle/SwingStudentBA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="286">
+          <caret line="51" column="19" selection-start-line="50" selection-end-line="58" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/images/BA4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/winkle2/SwingStudentBABox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        <state relative-caret-position="199">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
