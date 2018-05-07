@@ -11,6 +11,7 @@ import java.io.File;
 import static javax.swing.text.StyleConstants.Size;
 
 public class SwingStudentBABox extends JPanel implements ActionListener {
+    Font font1 = new Font("SansSerif", Font.BOLD, 16);
     JFileChooser fc;
     JButton openButton, saveButton;
     JTextArea log;
@@ -30,7 +31,7 @@ public class SwingStudentBABox extends JPanel implements ActionListener {
         frame.setLocationRelativeTo(null);
         SwingStudentBABox mainContent = new SwingStudentBABox();
         mainContent.setBorder(paddedBorder2);
-        mainContent.setPreferredSize(new Dimension(600, 500));
+        mainContent.setPreferredSize(new Dimension(600, 400));
         frame.add(mainContent, BorderLayout.CENTER);
 
 
@@ -43,32 +44,54 @@ public class SwingStudentBABox extends JPanel implements ActionListener {
 
     public SwingStudentBABox() {
         fc = new JFileChooser();
-        Font font1 = new Font("SansSerif", Font.BOLD, 16);
-        Font font2 = new Font("SansSerif", Font.BOLD, 16);
-        JTextField b = new JTextField(30);
-        openButton = new JButton("Browse...",
-                createImageIcon("images/Open16.gif"));
+        openButton = new JButton("Browse...", createImageIcon("images/Open16.gif"));
         openButton.addActionListener(this);
-        JTextField a = new JTextField(20);
-        a.setFont(font1);
+
+        saveButton = new JButton("...");
+        saveButton.addActionListener(this);
+
+        JLabel formatLabel = new JLabel("Format");
+        String[] formatOptions = {"XLS", "PDF", "JSON"};
+        JComboBox formatCombo = new JComboBox(formatOptions);
+
+
+        formatCombo.setSelectedIndex(0);
 
 
         setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS)); // top to bottom
         JPanel first = MakeTitledBorderPanel("Input File");
-        first.add(b);
-        first.add(openButton);
+        JPanel firstPanel1 = MakeTextFieldAndButton(20, openButton, font1);
+        JPanel secondPanel1 = MakeTextFieldAndButton(15, saveButton, font1);
+        first.add(firstPanel1);
+
         JPanel second = MakeTitledBorderPanel("Output File");
+        second.add(Box.createHorizontalGlue());
+        second.add(formatLabel);
+        second.add(formatCombo);
+        second.add(secondPanel1);
+
+//        second.add(a);
         add(first);
         add(second);
         add(MakeLowerPortion());
+    }
+
+    private JPanel MakeTextFieldAndButton(int columns, JButton b, Font f) {
+        JPanel g = new JPanel();
+        JTextField txt = new JTextField(columns);
+        txt.setFont(f);
+        g.add(txt);
+        g.add(b);
+        return g;
+
     }
 
     public void actionPerformed(ActionEvent e) {
 
         //Handle open button action.
         if (e.getSource() == openButton) {
-//            int returnVal = fc.showOpenDialog(SwingStudentBABox.this);
-//
+            int returnVal = fc.showOpenDialog(SwingStudentBABox.this);
+
 //            if (returnVal == JFileChooser.APPROVE_OPTION) {
 //                File file = fc.getSelectedFile();
 //                //This is where a real application would open the file.
@@ -81,14 +104,14 @@ public class SwingStudentBABox extends JPanel implements ActionListener {
             //Handle save button action.
         } else if (e.getSource() == saveButton) {
             int returnVal = fc.showSaveDialog(this);
-            if (returnVal == JFileChooser.APPROVE_OPTION) {
-                File file = fc.getSelectedFile();
-                //This is where a real application would save the file.
-                log.append("Saving: " + file.getName() + "." + newline);
-            } else {
-                log.append("Save command cancelled by user." + newline);
-            }
-            log.setCaretPosition(log.getDocument().getLength());
+//            if (returnVal == JFileChooser.APPROVE_OPTION) {
+//                File file = fc.getSelectedFile();
+//                //This is where a real application would save the file.
+//                log.append("Saving: " + file.getName() + "." + newline);
+//            } else {
+//                log.append("Save command cancelled by user." + newline);
+//            }
+//            log.setCaretPosition(log.getDocument().getLength());
         }
     }
 
