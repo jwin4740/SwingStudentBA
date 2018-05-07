@@ -4,12 +4,17 @@ package com.winkle2;
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 import static javax.swing.text.StyleConstants.Size;
 
-public class SwingStudentBABox extends JPanel {
-
+public class SwingStudentBABox extends JPanel implements ActionListener {
+    JFileChooser fc;
+    JButton openButton, saveButton;
+    JTextArea log;
+    static private final String newline = "\n";
 
     private static void createAndShowGUI2() {
         Border paddedBorder2 = BorderFactory.createEmptyBorder(20, 35, 20, 35);
@@ -23,8 +28,6 @@ public class SwingStudentBABox extends JPanel {
         frame.setLocation(xPos, yPos);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLocationRelativeTo(null);
-
-
         SwingStudentBABox mainContent = new SwingStudentBABox();
         mainContent.setBorder(paddedBorder2);
         mainContent.setPreferredSize(new Dimension(600, 500));
@@ -39,9 +42,67 @@ public class SwingStudentBABox extends JPanel {
     }
 
     public SwingStudentBABox() {
+        Font font1 = new Font("SansSerif", Font.BOLD, 16);
+        Font font2 = new Font("SansSerif", Font.BOLD, 16);
+        JTextField b = new JTextField(30);
+        openButton = new JButton("Browse...",
+                createImageIcon("images/Open16.gif"));
+        openButton.addActionListener(this);
+        JTextField a = new JTextField(20);
+        a.setFont(font1);
+
+
+        setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS)); // top to bottom
+        JPanel first = MakeTitledBorderPanel("Input File");
+        first.add(b);
+        first.add(openButton);
+        JPanel second = MakeTitledBorderPanel("Output File");
+        add(first);
+        add(second);
+        add(MakeLowerPortion());
+    }
+
+    public void actionPerformed(ActionEvent e) {
+
+        //Handle open button action.
+        if (e.getSource() == openButton) {
+            int returnVal = fc.showOpenDialog(this);
+
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                File file = fc.getSelectedFile();
+                //This is where a real application would open the file.
+                log.append("Opening: " + file.getName() + "." + newline);
+            } else {
+                log.append("Open command cancelled by user." + newline);
+            }
+            log.setCaretPosition(log.getDocument().getLength());
+
+            //Handle save button action.
+        } else if (e.getSource() == saveButton) {
+            int returnVal = fc.showSaveDialog(SwingStudentBABox.this);
+            if (returnVal == JFileChooser.APPROVE_OPTION) {
+                File file = fc.getSelectedFile();
+                //This is where a real application would save the file.
+                log.append("Saving: " + file.getName() + "." + newline);
+            } else {
+                log.append("Save command cancelled by user." + newline);
+            }
+            log.setCaretPosition(log.getDocument().getLength());
+        }
+    }
+
+    private static JPanel MakeTitledBorderPanel(String title) {
+        JPanel panelSection = new JPanel();
+        Border paddingBorder = BorderFactory.createEmptyBorder(10, 0, 25, 0);
+        panelSection.setBorder(BorderFactory.createCompoundBorder(paddingBorder, BorderFactory.createTitledBorder(title)));
+
+        return panelSection;
+    }
+
+    private static JPanel MakeLowerPortion() {
         JPanel buttonPane = new JPanel();
         JButton setButton = new JButton("CONVERT");
-        setButton.setMaximumSize(new Dimension(400,300));
+        setButton.setMaximumSize(new Dimension(400, 300));
         setButton.setFont(new Font("SansSerif", Font.BOLD, 16));
         setButton.setFocusPainted(false);
         setButton.setBackground(Color.green);
@@ -52,56 +113,8 @@ public class SwingStudentBABox extends JPanel {
         buttonPane.setBorder(BorderFactory.createEmptyBorder(10, 0, 0, 0));
         buttonPane.add(label2);
         buttonPane.add(Box.createHorizontalGlue());
-
         buttonPane.add(setButton);
-
-
-        setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS)); // top to bottom
-        JPanel first = MakeTitledBorderPanel("Input File");
-        JPanel second = MakeTitledBorderPanel("Output File");
-        add(first);
-        add(second);
-
-
-        JPanel imgPanel = new JPanel();
-
-//        imgPanel.setLayout(new BoxLayout(imgPanel, BoxLayout.LINE_AXIS));
-//        imgPanel.add(label2);
-//        imgPanel.add(Box.createHorizontalGlue());
-
-
-        add(buttonPane);
-//        add(imgPanel);
-
-
-//
-//        button = new JButton("Button 2");
-//        //button.setPreferredSize(...);
-//        button.setMaximumSize(new Dimension(Integer.MAX_VALUE, button.getMinimumSize().height));
-//        add(button);
-//
-//        button = new JButton("Button ........... 3");
-//        //button.setPreferredSize(...);
-//        button.setMaximumSize(new Dimension(Integer.MAX_VALUE, button.getMinimumSize().height));
-//        add(button);
-//
-//        JLabel label = new JLabel("Label");
-//        //label.setPreferredSize(...);
-//        label.setMaximumSize(new Dimension(Integer.MAX_VALUE, label.getMinimumSize().height));
-//        add(label);
-//
-//        JTextField textField = new JTextField();
-//        //textField.setPreferredSize(...);
-//        textField.setMaximumSize(new Dimension(Integer.MAX_VALUE, textField.getMinimumSize().height));
-//        add(textField);
-    }
-
-    private static JPanel MakeTitledBorderPanel(String title) {
-        JPanel panelSection = new JPanel();
-        Border paddingBorder = BorderFactory.createEmptyBorder(10, 0, 25, 0);
-        panelSection.setBorder(BorderFactory.createCompoundBorder(paddingBorder, BorderFactory.createTitledBorder(title)));
-
-        return panelSection;
+        return buttonPane;
     }
 
     protected static ImageIcon createImageIcon(String path) {

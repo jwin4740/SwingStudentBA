@@ -76,8 +76,7 @@ public class SwingStudentBA extends JFrame
                 createImageIcon("images/Open16.gif"));
 
         JButton dotButton = new JButton("...");
-        openButton.addActionListener(this);
-        JPanel outputPanel = MakeTitledBorderPanel("Output Location");
+        openButton.addActionListener(this);        JPanel outputPanel = MakeTitledBorderPanel("Output Location");
         outputPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
 
         JPanel inputPanel = MakeTitledBorderPanel("Input File");

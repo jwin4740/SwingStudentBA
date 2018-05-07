@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09977110-2da5-4b4d-96b5-aaf0996fe471" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/images/BA2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/images/BA2.png.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/images/BA3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/images/BA4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/images/BAImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/images/JavaIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/images/Open16.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/images/Save16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/winkle/SwingStudentBA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/winkle/SwingStudentBA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/winkle2/SwingStudentBABox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/winkle2/SwingStudentBABox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/winkle2/images/BA4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/winkle2/images/BA4.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,50 +17,59 @@
     <SUITE FILE_PATH="coverage/SwingStudentBA$Main.ic" NAME="Main Coverage Results" MODIFIED="1525561929325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SwingStudentBA.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/winkle/SwingStudentBA.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="66" column="42" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SwingStudentBABox.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/winkle2/SwingStudentBABox.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="47" column="60" lean-forward="true" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Runnable.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Desktop/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Runnable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.57490325">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="SwingStudentBABox.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/com/winkle2/SwingStudentBABox.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="151">
+                  <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#MakeTitledBorderPanel#0;class#SwingStudentBABox#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="528">
+                  <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Runnable.java" pinned="false" current-in-tab="false">
+            <entry file="jar://$USER_HOME$/Desktop/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Runnable.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="704">
+                  <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="SwingStudentBA.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/com/winkle/SwingStudentBA.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3520">
+                  <caret line="162" column="26" selection-start-line="162" selection-start-column="26" selection-end-line="162" selection-end-column="26" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -116,8 +116,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2316" />
-    <option name="y" value="42" />
+    <option name="x" value="2038" />
+    <option name="y" value="-4" />
     <option name="width" value="1752" />
     <option name="height" value="880" />
   </component>
@@ -306,12 +306,12 @@
       <workItem from="1525476977586" duration="8058000" />
       <workItem from="1525485102537" duration="107000" />
       <workItem from="1525559516164" duration="10282000" />
-      <workItem from="1525649115332" duration="4608000" />
+      <workItem from="1525649115332" duration="8429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53337000" />
+    <option name="totallyTimeSpent" value="57158000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -328,7 +328,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32948583" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32948583" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -336,11 +336,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3326338" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4207765" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.26547745" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32614705" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32871014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -754,8 +754,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/winkle/SwingStudentBA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="66" column="42" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="56" />
+        <state relative-caret-position="3520">
+          <caret line="162" column="26" selection-start-line="162" selection-start-column="26" selection-end-line="162" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -764,10 +764,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/winkle2/SwingStudentBABox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="47" column="60" lean-forward="true" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+        <state relative-caret-position="151">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#MakeTitledBorderPanel#0;class#SwingStudentBABox#0" />
           </folding>
         </state>
       </provider>
