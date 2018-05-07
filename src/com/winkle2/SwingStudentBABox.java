@@ -42,6 +42,7 @@ public class SwingStudentBABox extends JPanel implements ActionListener {
     }
 
     public SwingStudentBABox() {
+        fc = new JFileChooser();
         Font font1 = new Font("SansSerif", Font.BOLD, 16);
         Font font2 = new Font("SansSerif", Font.BOLD, 16);
         JTextField b = new JTextField(30);
@@ -66,20 +67,20 @@ public class SwingStudentBABox extends JPanel implements ActionListener {
 
         //Handle open button action.
         if (e.getSource() == openButton) {
-            int returnVal = fc.showOpenDialog(this);
-
-            if (returnVal == JFileChooser.APPROVE_OPTION) {
-                File file = fc.getSelectedFile();
-                //This is where a real application would open the file.
-                log.append("Opening: " + file.getName() + "." + newline);
-            } else {
-                log.append("Open command cancelled by user." + newline);
-            }
-            log.setCaretPosition(log.getDocument().getLength());
+//            int returnVal = fc.showOpenDialog(SwingStudentBABox.this);
+//
+//            if (returnVal == JFileChooser.APPROVE_OPTION) {
+//                File file = fc.getSelectedFile();
+//                //This is where a real application would open the file.
+//                log.append("Opening: " + file.getName() + "." + newline);
+//            } else {
+//                log.append("Open command cancelled by user." + newline);
+//            }
+//            log.setCaretPosition(log.getDocument().getLength());
 
             //Handle save button action.
         } else if (e.getSource() == saveButton) {
-            int returnVal = fc.showSaveDialog(SwingStudentBABox.this);
+            int returnVal = fc.showSaveDialog(this);
             if (returnVal == JFileChooser.APPROVE_OPTION) {
                 File file = fc.getSelectedFile();
                 //This is where a real application would save the file.
