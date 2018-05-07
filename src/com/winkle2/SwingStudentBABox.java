@@ -39,6 +39,21 @@ public class SwingStudentBABox extends JPanel {
     }
 
     public SwingStudentBABox() {
+        JPanel buttonPane = new JPanel();
+        JButton setButton = new JButton("CONVERT");
+        setButton.setMaximumSize(new Dimension(400,300));
+        setButton.setFont(new Font("SansSerif", Font.BOLD, 16));
+        setButton.setFocusPainted(false);
+        setButton.setBackground(Color.green);
+        setButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        ImageIcon mine = createImageIcon("images/BA4.png");
+        JLabel label2 = new JLabel(mine);
+        buttonPane.setLayout(new BoxLayout(buttonPane, BoxLayout.LINE_AXIS));
+        buttonPane.setBorder(BorderFactory.createEmptyBorder(10, 0, 0, 0));
+        buttonPane.add(label2);
+        buttonPane.add(Box.createHorizontalGlue());
+
+        buttonPane.add(setButton);
 
 
         setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS)); // top to bottom
@@ -47,24 +62,18 @@ public class SwingStudentBABox extends JPanel {
         add(first);
         add(second);
 
-        JButton button = new JButton("Button ...... 1");
 
         JPanel imgPanel = new JPanel();
 
-        ImageIcon mine = createImageIcon("images/BA4.png");
+//        imgPanel.setLayout(new BoxLayout(imgPanel, BoxLayout.LINE_AXIS));
+//        imgPanel.add(label2);
+//        imgPanel.add(Box.createHorizontalGlue());
 
-//        Border buttonBorder = BorderFactory.createEmptyBorder(5, 10, 5, 10);
 
-        JLabel label2 = new JLabel(mine);
-        label2.setAlignmentX(Component.RIGHT_ALIGNMENT);
+        add(buttonPane);
+//        add(imgPanel);
 
-        imgPanel.add(label2);
 
-        add(label2);
-
-        //button.setPreferredSize(...);
-//        button.setMaximumSize(new Dimension(Integer.MAX_VALUE, button.getMinimumSize().height));
-//        add(button);
 //
 //        button = new JButton("Button 2");
 //        //button.setPreferredSize(...);
@@ -94,6 +103,7 @@ public class SwingStudentBABox extends JPanel {
 
         return panelSection;
     }
+
     protected static ImageIcon createImageIcon(String path) {
         java.net.URL imgURL = SwingStudentBABox.class.getResource(path);
         if (imgURL != null) {
@@ -103,6 +113,7 @@ public class SwingStudentBABox extends JPanel {
             return null;
         }
     }
+
     public static void main(String[] args) {
         //Schedule a job for the event dispatch thread:
         //creating and showing this application's GUI.
