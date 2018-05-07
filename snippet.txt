@@ -80,13 +80,12 @@ public class SwingStudentBABox extends JPanel implements ActionListener {
         comboPanel.add(formatCombo);
 
 
-
         JPanel second = MakeTitledBorderPanel("Output File");
 
 
         JPanel secondWrapper = new JPanel(new FlowLayout(FlowLayout.LEFT));
         JPanel secondPanel1 = new JPanel();
-        input2 = new JTextField(25);
+        input2 = new JTextField(34);
         input2.setFont(font1);
         input2.setBackground(Color.lightGray);
         input2.setEditable(false);
@@ -94,8 +93,6 @@ public class SwingStudentBABox extends JPanel implements ActionListener {
 
         secondPanel1.add(input2);
         secondPanel1.add(saveButton);
-
-
 
 
         JLabel outputFileLabel = new JLabel("Output Destination");
@@ -110,19 +107,14 @@ public class SwingStudentBABox extends JPanel implements ActionListener {
 
 
         JPanel third = MakeTitledBorderPanel("Upload to Sharepoint");
-        JPanel thirdMainPanel = new JPanel();
-        thirdMainPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
-        JPanel shareLabelAndInput = new JPanel();
-
-        shareLabelAndInput.setLayout(new FlowLayout(FlowLayout.LEFT));
+        JPanel thirdWrapper = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        JPanel thirdPanel1 = new JPanel();
         JLabel sharepointLabel = new JLabel("Sharepoint Url");
         sharepointLabel.setFont(new Font("SansSerif", Font.ITALIC, 12));
         sharepointLabel.setBorder(labelBorder);
-        shareLabelAndInput.add(sharepointLabel);
-        input3 = new JTextField(35);
+        input3 = new JTextField(41);
         input3.setFont(font1);
-        input3.setPreferredSize(new Dimension(500, 25));
-
+        input3.setPreferredSize(new Dimension(60, 26));
         input3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -134,15 +126,12 @@ public class SwingStudentBABox extends JPanel implements ActionListener {
 
             }
         });
+        thirdPanel1.add(sharepointLabel);
+        thirdPanel1.add(input3);
+        thirdWrapper.add(thirdPanel1);
+        third.setLayout(new BorderLayout());
+        third.add(thirdWrapper, BorderLayout.NORTH);
 
-        shareLabelAndInput.add(input3);
-        thirdMainPanel.add(shareLabelAndInput);
-        third.add(thirdMainPanel);
-
-
-
-
-//        second.add(a);
         add(first);
         add(second);
         add(third);
