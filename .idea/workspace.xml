@@ -21,12 +21,20 @@
       <file leaf-file-name="SwingStudentBABox.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/winkle2/SwingStudentBABox.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+            <state relative-caret-position="236">
+              <caret line="87" column="34" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#MakeTitledBorderPanel#0;class#SwingStudentBABox#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="snippet.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/snippet.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="231" />
             </state>
           </provider>
         </entry>
@@ -87,10 +95,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1981" />
-    <option name="y" value="-4" />
-    <option name="width" value="1750" />
-    <option name="height" value="872" />
+    <option name="x" value="2327" />
+    <option name="y" value="233" />
+    <option name="width" value="1748" />
+    <option name="height" value="864" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -99,6 +107,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,19 +126,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="winkle2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SwingStudentBA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SwingStudentBA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="winkle2" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,12 +271,13 @@
       <workItem from="1525485102537" duration="107000" />
       <workItem from="1525559516164" duration="10282000" />
       <workItem from="1525649115332" duration="9809000" />
-      <workItem from="1525660143395" duration="1780000" />
+      <workItem from="1525660143395" duration="1964000" />
+      <workItem from="1525746170023" duration="259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60318000" />
+    <option name="totallyTimeSpent" value="60761000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -304,7 +306,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.26547745" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18905473" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1912659" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -332,13 +334,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Desktop/jdk-10.0.1/lib/src.zip!/java.desktop/javax/swing/JFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
@@ -586,13 +581,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/snippet.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="231" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/winkle2/SwingStudentBABox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+        <state relative-caret-position="236">
+          <caret line="87" column="34" selection-start-line="87" selection-start-column="34" selection-end-line="87" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#MakeTitledBorderPanel#0;class#SwingStudentBABox#0" />
           </folding>
         </state>
       </provider>
